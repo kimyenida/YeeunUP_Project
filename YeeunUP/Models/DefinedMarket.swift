@@ -15,6 +15,8 @@ struct DefinedMarket: Hashable {
     
     var marketType: MarketType = .NONE
     
+    var isAnimated: Bool = false
+    
     var uniqueIdentifier: String {
         return "\(String(describing: code))-\(String(describing: currentPrice)))"
     }
@@ -37,9 +39,10 @@ struct DefinedMarket: Hashable {
         self.warning = warning
     }
     
-    mutating func updateRealtimeInfo(currentPrice: Double, warning: Bool, acctradePrice24: Double) {
+    mutating func updateRealtimeInfo(currentPrice: Double, warning: Bool, acctradePrice24: Double, isAnimated: Bool) {
         self.currentPrice = currentPrice
         self.warning = warning
         self.acctradePrice24 = acctradePrice24
+        self.isAnimated = isAnimated
     }
 }

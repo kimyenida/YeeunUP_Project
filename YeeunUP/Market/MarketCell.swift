@@ -48,10 +48,7 @@ final class MarketCell: UITableViewCell {
         lb.textAlignment = .right
         return lb
     }()
-    
-    private var previousPrice: Double?
-    private var previousType: MarketType?
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
@@ -64,6 +61,11 @@ final class MarketCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         currentPriceLabel.backgroundColor = .clear
+        koreanNameLabel.text = ""
+        englishNameLabel.text = ""
+        cautionLabel.text = ""
+        currentPriceLabel.text = ""
+        acctradePriceLabel.text = ""
     }
     
     private func setupUI() {
@@ -116,12 +118,9 @@ final class MarketCell: UITableViewCell {
         default: break
         }
         
-        if previousPrice != market.currentPrice, previousType == market.marketType {
+        if market.isAnimated {
             animatePriceChange()
         }
-        // 현재 가격 저장
-        previousPrice = market.currentPrice
-        previousType = market.marketType
     }
 
     private func animatePriceChange() {

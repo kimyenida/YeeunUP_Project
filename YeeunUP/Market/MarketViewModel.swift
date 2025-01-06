@@ -93,9 +93,16 @@ final class MarketListViewModel {
             guard let `self` = self else { return }
             if var market = self.markets[realtimeInfo.code] {
                 let warning = (realtimeInfo.marketWarning=="CAUTION") ? true : false
-
-                market.updateRealtimeInfo(currentPrice: Double(realtimeInfo.tradePrice), warning: warning, acctradePrice24: realtimeInfo.accTradePrice24H)
-                self.markets[realtimeInfo.code] = market
+                
+//                market.updateRealtimeInfo(currentPrice: Double(realtimeInfo.tradePrice), warning: warning, acctradePrice24: realtimeInfo.accTradePrice24H)
+                if market.currentPrice != realtimeInfo.tradePrice {
+                    market.updateRealtimeInfo(currentPrice: realtimeInfo.tradePrice, warning: warning, acctradePrice24: realtimeInfo.accTradePrice24H, isAnimated: true)
+                    self.markets[realtimeInfo.code] = market
+                } else {
+                    market.updateRealtimeInfo(currentPrice: realtimeInfo.tradePrice, warning: warning, acctradePrice24: realtimeInfo.accTradePrice24H,isAnimated: false)
+                    self.markets[realtimeInfo.code] = market
+                }
+//                self.markets[realtimeInfo.code] = market
                 updateSnapShot()
             }
         }
