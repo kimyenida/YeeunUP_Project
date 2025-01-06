@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91D824F92D2BE818001335B7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D824F82D2BE815001335B7 /* UIColor.swift */; };
+		9D8047122D27564300B90EBE /* DefinedURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8047112D27563600B90EBE /* DefinedURL.swift */; };
+		9D8047152D27A05D00B90EBE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8047142D27A05B00B90EBE /* Coordinator.swift */; };
+		9DA753FB2D2367A300B1ACD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA753F42D2367A300B1ACD8 /* Assets.xcassets */; };
+		9DA753FD2D2367A300B1ACD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA753F72D2367A300B1ACD8 /* LaunchScreen.storyboard */; };
+		9DA753FE2D2367A300B1ACD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA753F32D2367A300B1ACD8 /* AppDelegate.swift */; };
+		9DA753FF2D2367A300B1ACD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA753F82D2367A300B1ACD8 /* SceneDelegate.swift */; };
+		9DA754022D2367F000B1ACD8 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754012D2367EB00B1ACD8 /* SplashViewController.swift */; };
+		9DA754042D23680D00B1ACD8 /* OrderBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754032D23680500B1ACD8 /* OrderBookViewController.swift */; };
+		9DA754062D23681E00B1ACD8 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754052D23681700B1ACD8 /* MarketViewController.swift */; };
+		9DA754082D23684B00B1ACD8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754072D23684700B1ACD8 /* AppCoordinator.swift */; };
+		9DA7540A2D236BAC00B1ACD8 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754092D236BA800B1ACD8 /* MarketViewModel.swift */; };
+		9DA7540E2D236BEF00B1ACD8 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7540C2D236BEC00B1ACD8 /* Market.swift */; };
+		9DA7541F2D23852700B1ACD8 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7541B2D23852700B1ACD8 /* NetworkRouter.swift */; };
+		9DA754212D23852700B1ACD8 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7541C2D23852700B1ACD8 /* EndPointType.swift */; };
+		9DA754222D23852700B1ACD8 /* MarketEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754132D23852700B1ACD8 /* MarketEndPoint.swift */; };
+		9DA754242D23852700B1ACD8 /* MarketAPIProceess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754172D23852700B1ACD8 /* MarketAPIProceess.swift */; };
+		9DA754252D23852700B1ACD8 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754152D23852700B1ACD8 /* NetworkResponse.swift */; };
+		9DA754262D23852700B1ACD8 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754192D23852700B1ACD8 /* Parameters.swift */; };
+		9DA754272D23852700B1ACD8 /* NetworkDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754112D23852700B1ACD8 /* NetworkDomain.swift */; };
+		9DA7542A2D2388A100B1ACD8 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754292D23889D00B1ACD8 /* SocketManager.swift */; };
+		9DA7542E2D238A9800B1ACD8 /* TickerSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7542D2D238A9600B1ACD8 /* TickerSocket.swift */; };
+		9DA754302D23B5AA00B1ACD8 /* DefinedMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7542F2D23B58800B1ACD8 /* DefinedMarket.swift */; };
+		9DA754322D23BEC500B1ACD8 /* MarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754312D23BEC100B1ACD8 /* MarketCell.swift */; };
+		9DA754342D23BF1D00B1ACD8 /* MarketHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754332D23BF1700B1ACD8 /* MarketHeaderView.swift */; };
+		9DA754372D23C2A600B1ACD8 /* MarketAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754362D23C29C00B1ACD8 /* MarketAPIService.swift */; };
+		9DA754392D23C2B100B1ACD8 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA754382D23C2AB00B1ACD8 /* SocketService.swift */; };
+		9DECDBB12D2610F700FA5316 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBB02D2610F200FA5316 /* Ticker.swift */; };
+		9DECDBB32D2632E700FA5316 /* OrderBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBB22D2632E200FA5316 /* OrderBookViewModel.swift */; };
+		9DECDBB52D26512300FA5316 /* OrderbookSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBB42D26511C00FA5316 /* OrderbookSocket.swift */; };
+		9DECDBB72D26520C00FA5316 /* OrderBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBB62D26520900FA5316 /* OrderBookCell.swift */; };
+		9DECDBB92D26576500FA5316 /* DefinedOrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBB82D26575D00FA5316 /* DefinedOrderBook.swift */; };
+		9DECDBBB2D26733400FA5316 /* OrderBookEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBBA2D26732F00FA5316 /* OrderBookEndPoint.swift */; };
+		9DECDBBD2D2673BB00FA5316 /* OrderBookAPIProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBBC2D2673B300FA5316 /* OrderBookAPIProcess.swift */; };
+		9DECDBBF2D2673D300FA5316 /* OrderBookAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBBE2D2673CB00FA5316 /* OrderBookAPIService.swift */; };
+		9DECDBC12D26741F00FA5316 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECDBC02D26741A00FA5316 /* OrderBook.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91D824F82D2BE815001335B7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9D8047112D27563600B90EBE /* DefinedURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedURL.swift; sourceTree = "<group>"; };
+		9D8047142D27A05B00B90EBE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9DA753C42D2365E200B1ACD8 /* YeeunUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeeunUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA753F32D2367A300B1ACD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DA753F42D2367A300B1ACD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA753F52D2367A300B1ACD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA753F62D2367A300B1ACD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DA753F82D2367A300B1ACD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9DA754012D2367EB00B1ACD8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		9DA754032D23680500B1ACD8 /* OrderBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookViewController.swift; sourceTree = "<group>"; };
+		9DA754052D23681700B1ACD8 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		9DA754072D23684700B1ACD8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9DA754092D236BA800B1ACD8 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		9DA7540C2D236BEC00B1ACD8 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		9DA754112D23852700B1ACD8 /* NetworkDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDomain.swift; sourceTree = "<group>"; };
+		9DA754132D23852700B1ACD8 /* MarketEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketEndPoint.swift; sourceTree = "<group>"; };
+		9DA754152D23852700B1ACD8 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		9DA754172D23852700B1ACD8 /* MarketAPIProceess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketAPIProceess.swift; sourceTree = "<group>"; };
+		9DA754192D23852700B1ACD8 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		9DA7541B2D23852700B1ACD8 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		9DA7541C2D23852700B1ACD8 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		9DA754292D23889D00B1ACD8 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		9DA7542D2D238A9600B1ACD8 /* TickerSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerSocket.swift; sourceTree = "<group>"; };
+		9DA7542F2D23B58800B1ACD8 /* DefinedMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedMarket.swift; sourceTree = "<group>"; };
+		9DA754312D23BEC100B1ACD8 /* MarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCell.swift; sourceTree = "<group>"; };
+		9DA754332D23BF1700B1ACD8 /* MarketHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketHeaderView.swift; sourceTree = "<group>"; };
+		9DA754362D23C29C00B1ACD8 /* MarketAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketAPIService.swift; sourceTree = "<group>"; };
+		9DA754382D23C2AB00B1ACD8 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		9DECDBB02D2610F200FA5316 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		9DECDBB22D2632E200FA5316 /* OrderBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookViewModel.swift; sourceTree = "<group>"; };
+		9DECDBB42D26511C00FA5316 /* OrderbookSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookSocket.swift; sourceTree = "<group>"; };
+		9DECDBB62D26520900FA5316 /* OrderBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookCell.swift; sourceTree = "<group>"; };
+		9DECDBB82D26575D00FA5316 /* DefinedOrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedOrderBook.swift; sourceTree = "<group>"; };
+		9DECDBBA2D26732F00FA5316 /* OrderBookEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookEndPoint.swift; sourceTree = "<group>"; };
+		9DECDBBC2D2673B300FA5316 /* OrderBookAPIProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookAPIProcess.swift; sourceTree = "<group>"; };
+		9DECDBBE2D2673CB00FA5316 /* OrderBookAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookAPIService.swift; sourceTree = "<group>"; };
+		9DECDBC02D26741A00FA5316 /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA753C12D2365E200B1ACD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91D824F72D2BE80D001335B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91D824F82D2BE815001335B7 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9D8047102D27562B00B90EBE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D8047112D27563600B90EBE /* DefinedURL.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9D8047132D27A04F00B90EBE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754072D23684700B1ACD8 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9DA753BB2D2365E200B1ACD8 = {
+			isa = PBXGroup;
+			children = (
+				9DA753FA2D2367A300B1ACD8 /* YeeunUP */,
+				9DA753C52D2365E200B1ACD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA753C52D2365E200B1ACD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA753C42D2365E200B1ACD8 /* YeeunUP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA753F02D2367A300B1ACD8 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754332D23BF1700B1ACD8 /* MarketHeaderView.swift */,
+				9DA754312D23BEC100B1ACD8 /* MarketCell.swift */,
+				9DA754092D236BA800B1ACD8 /* MarketViewModel.swift */,
+				9DA754052D23681700B1ACD8 /* MarketViewController.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		9DA753F12D2367A300B1ACD8 /* OrderBook */ = {
+			isa = PBXGroup;
+			children = (
+				9DECDBB62D26520900FA5316 /* OrderBookCell.swift */,
+				9DECDBB22D2632E200FA5316 /* OrderBookViewModel.swift */,
+				9DA754032D23680500B1ACD8 /* OrderBookViewController.swift */,
+			);
+			path = OrderBook;
+			sourceTree = "<group>";
+		};
+		9DA753F22D2367A300B1ACD8 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754012D2367EB00B1ACD8 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		9DA753FA2D2367A300B1ACD8 /* YeeunUP */ = {
+			isa = PBXGroup;
+			children = (
+				9DA753F82D2367A300B1ACD8 /* SceneDelegate.swift */,
+				9DA753F32D2367A300B1ACD8 /* AppDelegate.swift */,
+				9DA753F42D2367A300B1ACD8 /* Assets.xcassets */,
+				9DA753F52D2367A300B1ACD8 /* Info.plist */,
+				9DA753F72D2367A300B1ACD8 /* LaunchScreen.storyboard */,
+				91D824F72D2BE80D001335B7 /* Extension */,
+				9D8047132D27A04F00B90EBE /* Coordinator */,
+				9DA754352D23C29700B1ACD8 /* Protocol */,
+				9DA754102D236C7900B1ACD8 /* Models */,
+				9DA753F22D2367A300B1ACD8 /* Splash */,
+				9DA753F02D2367A300B1ACD8 /* Market */,
+				9DA753F12D2367A300B1ACD8 /* OrderBook */,
+				9DA7541E2D23852700B1ACD8 /* Network */,
+				9DA754282D23889200B1ACD8 /* Socket */,
+				9D8047102D27562B00B90EBE /* Utils */,
+			);
+			path = YeeunUP;
+			sourceTree = "<group>";
+		};
+		9DA754102D236C7900B1ACD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7542F2D23B58800B1ACD8 /* DefinedMarket.swift */,
+				9DECDBB82D26575D00FA5316 /* DefinedOrderBook.swift */,
+				9DECDBC02D26741A00FA5316 /* OrderBook.swift */,
+				9DECDBB42D26511C00FA5316 /* OrderbookSocket.swift */,
+				9DECDBB02D2610F200FA5316 /* Ticker.swift */,
+				9DA7542D2D238A9600B1ACD8 /* TickerSocket.swift */,
+				9DA7540C2D236BEC00B1ACD8 /* Market.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9DA754142D23852700B1ACD8 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754112D23852700B1ACD8 /* NetworkDomain.swift */,
+				9DA754132D23852700B1ACD8 /* MarketEndPoint.swift */,
+				9DECDBBA2D26732F00FA5316 /* OrderBookEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		9DA754182D23852700B1ACD8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754152D23852700B1ACD8 /* NetworkResponse.swift */,
+				9DA754172D23852700B1ACD8 /* MarketAPIProceess.swift */,
+				9DECDBBC2D2673B300FA5316 /* OrderBookAPIProcess.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9DA7541A2D23852700B1ACD8 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754192D23852700B1ACD8 /* Parameters.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		9DA7541D2D23852700B1ACD8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7541B2D23852700B1ACD8 /* NetworkRouter.swift */,
+				9DA7541C2D23852700B1ACD8 /* EndPointType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9DA7541E2D23852700B1ACD8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754142D23852700B1ACD8 /* EndPoint */,
+				9DA754182D23852700B1ACD8 /* API */,
+				9DA7541A2D23852700B1ACD8 /* Encoding */,
+				9DA7541D2D23852700B1ACD8 /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9DA754282D23889200B1ACD8 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				9DA754292D23889D00B1ACD8 /* SocketManager.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		9DA754352D23C29700B1ACD8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9D8047142D27A05B00B90EBE /* Coordinator.swift */,
+				9DA754362D23C29C00B1ACD8 /* MarketAPIService.swift */,
+				9DECDBBE2D2673CB00FA5316 /* OrderBookAPIService.swift */,
+				9DA754382D23C2AB00B1ACD8 /* SocketService.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA753C32D2365E200B1ACD8 /* YeeunUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA753D72D2365E400B1ACD8 /* Build configuration list for PBXNativeTarget "YeeunUP" */;
+			buildPhases = (
+				9DA753C02D2365E200B1ACD8 /* Sources */,
+				9DA753C12D2365E200B1ACD8 /* Frameworks */,
+				9DA753C22D2365E200B1ACD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YeeunUP;
+			packageProductDependencies = (
+			);
+			productName = YeeunUP;
+			productReference = 9DA753C42D2365E200B1ACD8 /* YeeunUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA753BC2D2365E200B1ACD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9DA753C32D2365E200B1ACD8 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 9DA753BF2D2365E200B1ACD8 /* Build configuration list for PBXProject "YeeunUP" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA753BB2D2365E200B1ACD8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9DA753C52D2365E200B1ACD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA753C32D2365E200B1ACD8 /* YeeunUP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA753C22D2365E200B1ACD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA753FB2D2367A300B1ACD8 /* Assets.xcassets in Resources */,
+				9DA753FD2D2367A300B1ACD8 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA753C02D2365E200B1ACD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA754392D23C2B100B1ACD8 /* SocketService.swift in Sources */,
+				9DA754082D23684B00B1ACD8 /* AppCoordinator.swift in Sources */,
+				9DECDBBB2D26733400FA5316 /* OrderBookEndPoint.swift in Sources */,
+				9DA754022D2367F000B1ACD8 /* SplashViewController.swift in Sources */,
+				9DA7542A2D2388A100B1ACD8 /* SocketManager.swift in Sources */,
+				9DA754372D23C2A600B1ACD8 /* MarketAPIService.swift in Sources */,
+				9DA7540A2D236BAC00B1ACD8 /* MarketViewModel.swift in Sources */,
+				9DECDBB92D26576500FA5316 /* DefinedOrderBook.swift in Sources */,
+				9DA7540E2D236BEF00B1ACD8 /* Market.swift in Sources */,
+				9DA754342D23BF1D00B1ACD8 /* MarketHeaderView.swift in Sources */,
+				9DECDBBD2D2673BB00FA5316 /* OrderBookAPIProcess.swift in Sources */,
+				9DA753FE2D2367A300B1ACD8 /* AppDelegate.swift in Sources */,
+				9DECDBB72D26520C00FA5316 /* OrderBookCell.swift in Sources */,
+				9D8047122D27564300B90EBE /* DefinedURL.swift in Sources */,
+				9DA754322D23BEC500B1ACD8 /* MarketCell.swift in Sources */,
+				9DECDBBF2D2673D300FA5316 /* OrderBookAPIService.swift in Sources */,
+				9DECDBC12D26741F00FA5316 /* OrderBook.swift in Sources */,
+				9D8047152D27A05D00B90EBE /* Coordinator.swift in Sources */,
+				9DECDBB12D2610F700FA5316 /* Ticker.swift in Sources */,
+				9DA7541F2D23852700B1ACD8 /* NetworkRouter.swift in Sources */,
+				9DA754212D23852700B1ACD8 /* EndPointType.swift in Sources */,
+				9DECDBB52D26512300FA5316 /* OrderbookSocket.swift in Sources */,
+				9DA754222D23852700B1ACD8 /* MarketEndPoint.swift in Sources */,
+				91D824F92D2BE818001335B7 /* UIColor.swift in Sources */,
+				9DA754242D23852700B1ACD8 /* MarketAPIProceess.swift in Sources */,
+				9DA754252D23852700B1ACD8 /* NetworkResponse.swift in Sources */,
+				9DA754262D23852700B1ACD8 /* Parameters.swift in Sources */,
+				9DA7542E2D238A9800B1ACD8 /* TickerSocket.swift in Sources */,
+				9DA754302D23B5AA00B1ACD8 /* DefinedMarket.swift in Sources */,
+				9DA754272D23852700B1ACD8 /* NetworkDomain.swift in Sources */,
+				9DA754062D23681E00B1ACD8 /* MarketViewController.swift in Sources */,
+				9DA754042D23680D00B1ACD8 /* OrderBookViewController.swift in Sources */,
+				9DECDBB32D2632E700FA5316 /* OrderBookViewModel.swift in Sources */,
+				9DA753FF2D2367A300B1ACD8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DA753F72D2367A300B1ACD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA753F62D2367A300B1ACD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DA753D82D2365E400B1ACD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8WR454839;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YeeunUP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeeun.YeeunUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DA753D92D2365E400B1ACD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8WR454839;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YeeunUP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeeun.YeeunUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DA753DA2D2365E400B1ACD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DA753DB2D2365E400B1ACD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA753BF2D2365E200B1ACD8 /* Build configuration list for PBXProject "YeeunUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA753DA2D2365E400B1ACD8 /* Debug */,
+				9DA753DB2D2365E400B1ACD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA753D72D2365E400B1ACD8 /* Build configuration list for PBXNativeTarget "YeeunUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA753D82D2365E400B1ACD8 /* Debug */,
+				9DA753D92D2365E400B1ACD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DA753BC2D2365E200B1ACD8 /* Project object */;
+}
